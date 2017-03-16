@@ -1,6 +1,6 @@
 # Form Express
 
-Simple CRUD app with Express and Sequelize. RDBMS using PostgreSQL.
+Simple CRUD app with ExpressJS and SequelizeJS ORM. RDBMS using PostgreSQL. Front-end framework using Bootstrap.
 
 ## Routes
 
