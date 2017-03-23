@@ -3,7 +3,12 @@ var router = express.Router();
 var db = require('../models');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/',
+  function(req, res, next) {
+    console.log('index page is accessed!');
+    next();
+  },
+  function(req, res, next) {
   db.Post
     .findAll({
       order: [['createdAt', 'DESC']]
@@ -31,5 +36,6 @@ router.post('/add', (req, res, next) => {
       res.send({ "error_message": err.message });
     })
 });
+
 
 module.exports = router;
